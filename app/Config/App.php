@@ -134,7 +134,6 @@ class App extends BaseConfig
      *      supported by PHP.
      */
     public string $appTimezone = 'UTC';
-
     /**
      * --------------------------------------------------------------------------
      * Default Character Set
