@@ -57,7 +57,7 @@ class CursoController extends Controller
      public function delete($id)
     {
         $this->cursoModel->delete($id);
-        return redirect()->to('/alumnos');
+        return redirect()->to('/cursos');
     }
 
 }

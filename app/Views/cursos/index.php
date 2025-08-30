@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-    <h4><?php echo $titulo ?></h4>
+    <h4>titulo</h4>
     <a class="btn waves-effect" href="<?= site_url('alumnos/create') ?>">➕ Nuevo Alumno</a>
     <table class="striped highlight responsive-table">
         <tr>
