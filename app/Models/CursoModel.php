@@ -12,6 +12,6 @@ class CursoModel extends Model
     protected $allowedFields = [
         'nombre',
         'profesor',
-        'inactivo'
+        'Inactivo'
     ];
 }
