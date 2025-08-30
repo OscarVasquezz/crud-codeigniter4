@@ -24,3 +24,14 @@ CREATE TABLE `cursos` (
   `inactivo` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`curso`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+
+-- umg.DETALLE definition
+
+CREATE TABLE `detalle_alumno_curso` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `alumno_id` int(11) NOT NULL,
+  `curso_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`alumno_id`) REFERENCES `alumnos`(`alumno`) ON DELETE CASCADE,
+  FOREIGN KEY (`curso_id`) REFERENCES `cursos`(`curso`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
